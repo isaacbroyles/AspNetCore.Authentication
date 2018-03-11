@@ -23,19 +23,19 @@ namespace Microsoft.AspNetCore.Authentication
 
         private class ConfigureWsFedOptions : IConfigureNamedOptions<WsFederationOptions>
         {
-            private readonly WsFedOptions _azureOptions;
+            private readonly WsFedOptions _wsFedOptions;
 
             public ConfigureWsFedOptions(IOptions<WsFedOptions> azureOptions)
             {
-                _azureOptions = azureOptions.Value;
+                _wsFedOptions = azureOptions.Value;
             }
 
             public void Configure(string name, WsFederationOptions options)
             {
-                options.Wtrealm = _azureOptions.Realm;
-                options.MetadataAddress = _azureOptions.Metadata;
+                options.Wtrealm = _wsFedOptions.Realm;
+                options.MetadataAddress = _wsFedOptions.Metadata;
                 options.UseTokenLifetime = true;
-                options.CallbackPath = _azureOptions.CallbackPath;
+                options.CallbackPath = _wsFedOptions.CallbackPath;
                 options.RequireHttpsMetadata = false;
                 options.BackchannelHttpHandler = new HttpClientHandler() { ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator };
             }
