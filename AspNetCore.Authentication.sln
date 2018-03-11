@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.AzureAd", "AspNetCore.AzureAd\AspNetCore.AzureAd.csproj", "{E82C3CB2-3D67-49AF-AB7E-060B755361BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Adfs", "AspNetCore.Adfs\AspNetCore.Adfs.csproj", "{D590D17D-EFA5-402F-A507-372628232C04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E82C3CB2-3D67-49AF-AB7E-060B755361BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82C3CB2-3D67-49AF-AB7E-060B755361BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82C3CB2-3D67-49AF-AB7E-060B755361BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82C3CB2-3D67-49AF-AB7E-060B755361BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D590D17D-EFA5-402F-A507-372628232C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D590D17D-EFA5-402F-A507-372628232C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D590D17D-EFA5-402F-A507-372628232C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D590D17D-EFA5-402F-A507-372628232C04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E47E9359-ECA5-45C4-8EA2-70D56205F0F7}
+	EndGlobalSection
+EndGlobal
